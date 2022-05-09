@@ -10,7 +10,11 @@ const Banner = () => {
     <div>
       <Carousel fade>
         <Carousel.Item>
-          <img className="d-block w-100" src={banner1} alt="First slide" />
+          <img
+            className="d-block w-100 banner-img"
+            src={banner1}
+            alt="First slide"
+          />
           <Carousel.Caption>
             <div className="text-black mb-4">
               <h3>HP ENVY 15-ep1890TX</h3>
@@ -19,7 +23,11 @@ const Banner = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={banner2} alt="Second slide" />
+          <img
+            className="d-block w-100 banner-img"
+            src={banner2}
+            alt="Second slide"
+          />
 
           <Carousel.Caption>
             <h3>Apple Macbook Pro 2019</h3>
@@ -27,7 +35,11 @@ const Banner = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={banner3} alt="Third slide" />
+          <img
+            className="d-block w-100 banner-img"
+            src={banner3}
+            alt="Third slide"
+          />
 
           <Carousel.Caption>
             <div className="text-black pb-5">

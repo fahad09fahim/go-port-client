@@ -1,15 +1,15 @@
-img {
+.banner-img {
   height: 599px;
 }
 
 @media only screen and (max-width: 576px) {
-  img {
+  .banner-img {
     height: 200px;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-  img {
+  .banner-img {
     height: 300px;
   }
 }
