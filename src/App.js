@@ -9,13 +9,14 @@ import TrustedShop from "./Component/Pages/Home/TrustedShop/TrustedShop";
 import Login from "./Component/Pages/Login/Login/Login";
 import Registration from "./Component/Pages/Login/Registration/Registration";
 import RequireAuth from "./Component/Pages/Login/RequireAuth/RequireAuth";
+import Footer from "./Component/Pages/Shared/Footer/Footer";
 import Header from "./Component/Pages/Shared/Header/Header";
 import NotFound from "./Component/Pages/Shared/NotFound/NotFound";
 
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/items" element={<Items />} />
@@ -36,18 +37,12 @@ function App() {
             </RequireAuth>
           }
         />
-        <Route
-          path="/blogs"
-          element={
-            <RequireAuth>
-              <Blogs />
-            </RequireAuth>
-          }
-        />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
