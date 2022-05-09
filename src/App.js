@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Component/Pages/Home/Home/Home";
+import ItemDetails from "./Component/Pages/Home/ItemDetails/ItemDetails";
 import Items from "./Component/Pages/Home/Items/Items";
 import Survey from "./Component/Pages/Home/Survey/Survey";
 import TrustedShop from "./Component/Pages/Home/TrustedShop/TrustedShop";
@@ -17,6 +18,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/items" element={<Items />} />
+        <Route
+          path="/items/:itemsId"
+          element={
+            <RequireAuth>
+              <ItemDetails></ItemDetails>
+            </RequireAuth>
+          }
+        />
         <Route path="/survey" element={<Survey />} />
         <Route
           path="/trustedShop"

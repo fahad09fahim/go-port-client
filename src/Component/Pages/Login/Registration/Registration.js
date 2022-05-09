@@ -20,7 +20,7 @@ const Registration = () => {
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    await createUserWithEmailAndPassword(name, email, password);
+    await createUserWithEmailAndPassword(email, password);
   };
   const navigateLogin = () => {
     navigate("/login");
@@ -70,7 +70,7 @@ const Registration = () => {
           </label>
         </p>
         <p>
-          <input disabled={!agree} type="submit" value="Log in" />
+          <input disabled={!agree} type="submit" value="Registraiton" />
         </p>
       </form>
       <p className="text-center">
