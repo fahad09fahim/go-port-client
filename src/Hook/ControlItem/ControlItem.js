@@ -4,7 +4,7 @@ const ControlItem = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/items")
+    fetch("https://herokugoport.herokuapp.com/items")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);

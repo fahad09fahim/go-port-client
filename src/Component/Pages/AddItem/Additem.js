@@ -5,7 +5,7 @@ const AddItem = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/items`;
+    const url = `https://herokugoport.herokuapp.com/items`;
     fetch(url, {
       method: "POST",
       headers: {
