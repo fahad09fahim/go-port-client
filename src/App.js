@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Blogs from "./Component/Pages/Home/Blogs/Blogs";
 import Home from "./Component/Pages/Home/Home/Home";
 import ItemDetails from "./Component/Pages/Home/ItemDetails/ItemDetails";
 import Items from "./Component/Pages/Home/Items/Items";
@@ -19,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/items" element={<Items />} />
         <Route
-          path="/items/:itemsId"
+          path="/items/:itemId"
           element={
             <RequireAuth>
               <ItemDetails></ItemDetails>
@@ -32,6 +33,14 @@ function App() {
           element={
             <RequireAuth>
               <TrustedShop />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/blogs"
+          element={
+            <RequireAuth>
+              <Blogs />
             </RequireAuth>
           }
         />
