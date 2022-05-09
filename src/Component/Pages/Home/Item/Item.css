@@ -1,5 +1,9 @@
 .item {
   text-align: center;
+  border: 1px solid tomato;
+  border-radius: 25px;
+  margin: 5px 5px;
+  padding: 10px 0px;
 }
 img {
   width: 25%;

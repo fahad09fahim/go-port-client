@@ -1,7 +1,7 @@
 import React from "react";
 import "./Item.css";
 const Item = ({ item }) => {
-  const { name, price, description, img } = item;
+  const { name, price, description, img, quantity, supplier } = item;
   return (
     <div className="item">
       <img src={img} alt="" />
@@ -10,6 +10,9 @@ const Item = ({ item }) => {
       <p className="description">
         <small>{description}</small>
       </p>
+      <p>Supplier Name: {supplier}</p>
+      <p>Quantity: {quantity}</p>
+      <button className="btn btn-info">Update</button>
     </div>
   );
 };
