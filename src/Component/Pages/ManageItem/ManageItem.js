@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ControlItem from "../../../Hook/ControlItem/ControlItem";
 
 const ManageItem = () => {
@@ -45,6 +46,12 @@ const ManageItem = () => {
           </table>
         </div>
       ))}
+      <Link
+        className="d-flex justify-content-center text-decoration-none fs-3 mt-2"
+        to="/additem"
+      >
+        Add Item
+      </Link>
     </div>
   );
 };

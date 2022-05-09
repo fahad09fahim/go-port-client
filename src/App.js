@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import AddItem from "./Component/Pages/AddItem/Additem";
 import Blogs from "./Component/Pages/Home/Blogs/Blogs";
 import Home from "./Component/Pages/Home/Home/Home";
 import ItemDetails from "./Component/Pages/Home/ItemDetails/ItemDetails";
@@ -38,7 +39,22 @@ function App() {
             </RequireAuth>
           }
         />
-        <Route path="/manageitem" element={<ManageItem />} />
+        <Route
+          path="/manageitem"
+          element={
+            <RequireAuth>
+              <ManageItem />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/additem"
+          element={
+            <RequireAuth>
+              <AddItem />
+            </RequireAuth>
+          }
+        />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
