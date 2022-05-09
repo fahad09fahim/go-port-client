@@ -9,6 +9,7 @@ import TrustedShop from "./Component/Pages/Home/TrustedShop/TrustedShop";
 import Login from "./Component/Pages/Login/Login/Login";
 import Registration from "./Component/Pages/Login/Registration/Registration";
 import RequireAuth from "./Component/Pages/Login/RequireAuth/RequireAuth";
+import ManageItem from "./Component/Pages/ManageItem/ManageItem";
 import Footer from "./Component/Pages/Shared/Footer/Footer";
 import Header from "./Component/Pages/Shared/Header/Header";
 import NotFound from "./Component/Pages/Shared/NotFound/NotFound";
@@ -37,6 +38,7 @@ function App() {
             </RequireAuth>
           }
         />
+        <Route path="/manageitem" element={<ManageItem />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
