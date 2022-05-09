@@ -32,7 +32,7 @@ const Login = () => {
     navigate(from, { replace: true });
   }
   if (hookError) {
-    errorElement = <p className="text-warning">{hookError?.message}</p>;
+    errorElement = <p className="text-danger">{hookError?.message}</p>;
   }
   // handle submit form
   const handleSubmit = async (e) => {
@@ -100,17 +100,6 @@ const Login = () => {
       </p>
       <SocialLogin></SocialLogin>
       {errorElement}
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
     </div>
   );
 };

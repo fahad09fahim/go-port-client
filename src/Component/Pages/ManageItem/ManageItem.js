@@ -21,10 +21,10 @@ const ManageItem = () => {
     }
   };
   return (
-    <div className="w-50 mx-auto">
+    <div className="mx-auto">
       <h4 className="text-center">Manage Items</h4>
       {items.map((item) => (
-        <div className="text-center" key={item._id}>
+        <div className="ms-2" key={item._id}>
           <table>
             <tbody>
               <th>

@@ -17,7 +17,7 @@ const SocialLogin = () => {
     navigate("/");
   }
   if (error) {
-    handleError = <p className="text-warning"> {error?.message}</p>;
+    handleError = <p className="text-danger"> {error?.message}</p>;
   }
   return (
     <div>
